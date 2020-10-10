@@ -7,11 +7,15 @@ const styles = {
         color: '#fff'
     },
     tableDataRow: {
-        borderBottom: '1px solid #ddd'
+        borderTop: '1px solid #bebebe'
     },
     table: {
-        background: '#fff',
-        borderRadius: '5px'
+        background: '#fff'
+    },
+    tabStyle: {
+        padding: '20px',
+        background: '#272727',
+        border: 'none'
     }
 }
 

@@ -6,3 +6,19 @@ body {
 
 }
 
+
+.nav-item,
+.nav-link
+{
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px!important;
+}
+
+.nav-item:hover,
+.nav-link:focus
+{   
+
+}
+
+

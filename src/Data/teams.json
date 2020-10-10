@@ -1,0 +1,14 @@
+{
+    "teams": [
+        {"TID":"MER","name":"Mercedes","points":"0"},
+        {"TID":"RBR","name":"Red Bull Racing","points":"0"},
+        {"TID":"FER","name":"Ferrari","points":"0"},
+        {"TID":"RAC","name":"Racing Points","points":"0"},
+        {"TID":"REN","name":"Renault","points":"0"},
+        {"TID":"ALP","name":"AlphaTauri","points":"0"},
+        {"TID":"WIL","name":"Williams","points":"0"},
+        {"TID":"ALF","name":"Alfa Romeo","points":"0"},
+        {"TID":"MCL","name":"McLaren","points":"0"},
+        {"TID":"HAS","name":"Haas","points":"0"}
+    ]
+}
