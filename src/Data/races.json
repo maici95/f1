@@ -1,0 +1,20 @@
+{
+    "races": [
+        {
+            "name": "Australia",
+            "result": ["HAM", "VET", "LEC", "ALB", "VER"],
+            "fastestLap": {
+                "driver": "BOT",
+                "position": "19"
+            }
+        },
+        {
+            "name": "Bahrain",
+            "result": ["VET", "HAM", "SAI", "KVY", "RAI", "LEC", "RIC", "NOR", "PER"],
+            "fastestLap": {
+                "driver": "VET",
+                "position": "1"
+            }
+        }
+    ]
+}
