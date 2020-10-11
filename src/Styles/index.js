@@ -10,7 +10,8 @@ const styles = {
         borderTop: '1px solid #bebebe'
     },
     table: {
-        background: '#fff'
+        background: '#fff',
+        borderBottom: '2px solid #bebebe'
     },
     tabStyle: {
         padding: '20px',

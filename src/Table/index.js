@@ -7,7 +7,6 @@ import { Table as TableRB } from 'react-bootstrap';
 
 import pointsSys from '../Data/points.json';
 import races from '../Data/races.json';
-
 import drivers from '../Data/drivers.json';
 
 import styles from '../Styles';
@@ -18,6 +17,7 @@ export default function Table(props) {
     const [data, setData] = React.useState(props.data ? props.data : []);
     const [ready, setReady] = React.useState(false);
     const type = props.type ? props.type : 'drivers';
+    const selRace = props.race ? props.race : null;
 
     // Calculate drivers' points and sort them
     React.useEffect(() => {
@@ -32,9 +32,10 @@ export default function Table(props) {
                 newData = newData.sort((a, b) => b.points - a.points);
                 setData([...newData]);
                 setReady(true);
-            } else {
+            }
+            
+            if (type === 'teams') {
                 // Constructions' stadings
-                // ...
                 let newData = data;
                 for (let team of newData) {
                     team.points = calcTeamPoints(team.TID);
@@ -44,8 +45,32 @@ export default function Table(props) {
                 setData([...newData]);
                 setReady(true);
             }
+
         }
+
     }, [data, ready, type]);
+
+    // Format selected race result
+    React.useEffect(() => {
+        if (type === 'results') {
+            const race = races.races.find(item => item.name === selRace);
+            let newData = [];
+    
+            if (race) {
+                for (let driver of race.result) {
+                    const d = drivers.drivers.find(item => item.DID === driver);
+                    newData.push({
+                        name: d.name,
+                        team: d.team
+                    });
+                }
+            }
+
+            setData([...newData]);
+        }
+
+    }, [selRace]);
+
 
 
     return (
@@ -87,6 +112,9 @@ function td(index, data, t) {
     if (type === 'teams') {
         return tdTeam(index, data);
     }
+    if (type === 'results') {
+        return tdResult(index, data);
+    }
 }
 
 // driver data row
@@ -117,6 +145,21 @@ function tdTeam(index, data) {
             <td><b>{data.name}</b></td>
             <td style={{textAlign: 'right'}}>{data.points}</td>
         </tr>
+    );
+}
+
+// result data row
+function tdResult(index, data) {
+    return (
+    <tr key={index}
+        style={
+            {...styles.tableDataRow, background: index % 2 === 0 ? '#fff' : '#f5f5f5'}
+        }
+    >
+        <td>{index + 1}</td>
+        <td><b>{data.name}</b></td>
+        <td>{data.team}</td>
+    </tr>
     );
 }
 
