@@ -8,6 +8,7 @@ import Table from '../Table';
 
 import drivers from '../Data/drivers.json';
 import teams from '../Data/teams.json';
+import races from '../Data/races.json';
 
 import styles from '../Styles';
 
@@ -42,8 +43,13 @@ export default function App() {
                                 {selRace}
                             </Dropdown.Toggle>
                             <Dropdown.Menu onClick={(event) => setSelRace(event.target.innerHTML)}>
-                                <Dropdown.Item>Australia</Dropdown.Item>
-                                <Dropdown.Item>Bahrain</Dropdown.Item>
+                                {races.races.map((race, index) => {
+                                    return (
+                                        <Dropdown.Item key={index}>{race.name}</Dropdown.Item>
+                                    );
+                                })}
+{/*                                 <Dropdown.Item>Australia</Dropdown.Item>
+                                <Dropdown.Item>Bahrain</Dropdown.Item> */}
                             </Dropdown.Menu>
                         </Dropdown>
                     </Container>

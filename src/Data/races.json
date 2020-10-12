@@ -15,6 +15,14 @@
                 "driver": "VET",
                 "position": "1"
             }
+        },
+        {
+            "name": "Vietnam",
+            "result": ["BOT", "LEC", "VET", "ALB", "RIC", "STR", "KVY", "MAG", "GIO", "GRO"],
+            "fastestLap": {
+                "driver": "VER",
+                "position": "14"
+            }
         }
     ]
 }

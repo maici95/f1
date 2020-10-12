@@ -69,7 +69,7 @@ export default function Table(props) {
             setData([...newData]);
         }
 
-    }, [selRace]);
+    }, [selRace, type]);
 
 
 
