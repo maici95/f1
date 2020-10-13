@@ -19,7 +19,7 @@ export default function App() {
     return (
         <Container>
 
-            <Tabs defaultActiveKey="results" style={styles.tabStyle}>
+            <Tabs defaultActiveKey="drivers" style={styles.tabStyle}>
                 <Tab eventKey="drivers" title="Drivers">
                     <Table
                         headers={['#', 'Name', 'Team', 'Points']}

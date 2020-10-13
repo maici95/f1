@@ -23,6 +23,14 @@
                 "driver": "VER",
                 "position": "14"
             }
+        },
+        {
+            "name": "China",
+            "result": ["HAM","BOT","VET","OCO","NOR","KVY","ALB","STR","RAI","LEC"],
+            "fastestLap": {
+                "driver": "HAM",
+                "position": "1"
+            }
         }
     ]
 }
