@@ -61,7 +61,8 @@ export default function Table(props) {
                     const d = drivers.drivers.find(item => item.DID === driver);
                     newData.push({
                         name: d.name,
-                        team: d.team
+                        team: d.team,
+                        DID: d.DID
                     });
                 }
             }
@@ -84,7 +85,7 @@ export default function Table(props) {
             </thead>
             <tbody>
                     {data.map((item, index) => {
-                        return td(index, item, type);
+                        return td(index, item, type, selRace);
                     })}
             </tbody>
         </TableRB>
@@ -103,7 +104,7 @@ function th(index, text) {
 }
 
 // table data row
-function td(index, data, t) {
+function td(index, data, t, selRace) {
     const type = t ? t : null;
 
     if (type === 'drivers') {
@@ -113,7 +114,7 @@ function td(index, data, t) {
         return tdTeam(index, data);
     }
     if (type === 'results') {
-        return tdResult(index, data);
+        return tdResult(index, data, selRace);
     }
 }
 
@@ -149,7 +150,14 @@ function tdTeam(index, data) {
 }
 
 // result data row
-function tdResult(index, data) {
+function tdResult(index, data, selRace) {
+    const fastestLap = races.races.find(race => race.name === selRace).fastestLap;
+    let fLapPoint = false;
+
+    if (fastestLap.driver === data.DID && fastestLap.position < 11) {
+        fLapPoint = true;
+    }
+
     return (
     <tr key={index}
         style={
@@ -159,6 +167,7 @@ function tdResult(index, data) {
         <td>{index + 1}</td>
         <td><b>{data.name}</b></td>
         <td>{data.team}</td>
+        <td style={{textAlign: 'right'}}>{pointsSys.ptsSys[index] + (fLapPoint ? 1 : 0)}</td>
     </tr>
     );
 }

@@ -19,7 +19,7 @@ export default function App() {
     return (
         <Container>
 
-            <Tabs defaultActiveKey="drivers" style={styles.tabStyle}>
+            <Tabs defaultActiveKey="results" style={styles.tabStyle}>
                 <Tab eventKey="drivers" title="Drivers">
                     <Table
                         headers={['#', 'Name', 'Team', 'Points']}
@@ -48,13 +48,11 @@ export default function App() {
                                         <Dropdown.Item key={index}>{race.name}</Dropdown.Item>
                                     );
                                 })}
-{/*                                 <Dropdown.Item>Australia</Dropdown.Item>
-                                <Dropdown.Item>Bahrain</Dropdown.Item> */}
                             </Dropdown.Menu>
                         </Dropdown>
                     </Container>
                     <Table
-                        headers={['#', 'Name', 'Team']}
+                        headers={['#', 'Name', 'Team', 'Points']}
                         type="results"
                         race={selRace}
                         data={[]}
