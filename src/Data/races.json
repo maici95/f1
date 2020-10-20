@@ -31,6 +31,14 @@
                 "driver": "HAM",
                 "position": "1"
             }
+        },
+        {
+            "name": "Dutch",
+            "result": ["BOT","ALB","VER","STR","PER","HAM","LEC","NOR","KVY","RIC"],
+            "fastestLap": {
+                "driver": "BOT",
+                "position": "1"
+            }
         }
     ]
 }
