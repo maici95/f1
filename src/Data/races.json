@@ -39,6 +39,14 @@
                 "driver": "BOT",
                 "position": "1"
             }
+        },
+        {
+            "name": "Spain",
+            "result": ["HAM","BOT","OCO","ALB","GAS","PER","SAI","STR","MAG","NOR"],
+            "fastestLap": {
+                "driver": "BOT",
+                "position": "2"
+            }
         }
     ]
 }
