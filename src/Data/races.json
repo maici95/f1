@@ -47,6 +47,14 @@
                 "driver": "BOT",
                 "position": "2"
             }
+        },
+        {
+            "name": "Monaco",
+            "result": ["HAM","NOR","PER","BOT","GRO","ALB","LEC","RAI","RIC","RUS"],
+            "fastestLap": {
+                "driver": "VER",
+                "position": "20"
+            }
         }
     ]
 }
