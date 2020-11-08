@@ -19,6 +19,9 @@
         {"DID": "RUS","TID":"WIL","name":"George Russel","points":"0","team":"Williams"},
         {"DID": "LAT","TID":"WIL","name":"Latifi","points":"0","team":"Williams"},
         {"DID": "GRO","TID":"HAS","name":"Romain Grosjean","points":"0","team":"Haas"},
-        {"DID": "MAG","TID":"HAS","name":"Kevin Magnussen","points":"0","team":"Haas"}
+        {"DID": "MAG","TID":"HAS","name":"Kevin Magnussen","points":"0","team":"Haas"},
+        {"DID": "UDA","TID":"MER","name":"Upside Down","points": "0","team":"Mercedes"},
+        {"DID": "SUP","TID":"CUS","name":"SUPER SWEDE","points": "0","team":"Custom"},
+        {"DID": "JAN","TID":"CUS","name":"JAN CALUUN","points": "0","team":"Custom"}
     ]
 }

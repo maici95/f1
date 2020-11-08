@@ -2,59 +2,103 @@
     "races": [
         {
             "name": "Australia",
-            "result": ["HAM", "VET", "LEC", "ALB", "VER", "RIC", "KVY", "STR", "SAI", "RUS"],
+            "result": ["UDA","SUP","LEC","ALB","JAN","RIC","KVY","STR","SAI","RUS"],
             "fastestLap": {
-                "driver": "BOT",
+                "driver": "",
                 "position": "19"
             }
         },
+
         {
             "name": "Bahrain",
-            "result": ["VET", "HAM", "SAI", "KVY", "ALB", "RAI", "LEC", "RIC", "NOR", "PER"],
+            "result": ["SUP","UDA","SAI","KVY","ALB","RAI","LEC","RIC","NOR","PER"],
             "fastestLap": {
-                "driver": "VET",
+                "driver": "SUP",
                 "position": "1"
             }
         },
+
         {
             "name": "Vietnam",
-            "result": ["BOT", "LEC", "VET", "ALB", "RIC", "STR", "KVY", "MAG", "GIO", "GRO"],
+            "result": ["BOT","LEC","SUP","ALB","RIC","STR","KVY","MAG","GIO","GRO"],
             "fastestLap": {
-                "driver": "VER",
-                "position": "14"
-            }
-        },
-        {
-            "name": "China",
-            "result": ["HAM","BOT","VET","OCO","NOR","KVY","ALB","STR","RAI","LEC"],
-            "fastestLap": {
-                "driver": "HAM",
+                "driver": "",
                 "position": "1"
             }
         },
+
         {
-            "name": "Dutch",
-            "result": ["BOT","ALB","VER","STR","PER","HAM","LEC","NOR","KVY","RIC"],
+            "name": "CHINA",
+            "result": ["UDA","BOT","SUP","OCO","NOR","KVY","ALB","STR","RAI","LEC"],
+            "fastestLap": {
+                "driver": "UDA",
+                "position": "1"
+            }
+        },
+
+        {
+            "name": "DUTCH",
+            "result": ["BOT","ALB","JAN","STR","PER","UDA","LEC","NOR","KVY","RIC"],
             "fastestLap": {
                 "driver": "BOT",
                 "position": "1"
             }
         },
+
         {
-            "name": "Spain",
-            "result": ["HAM","BOT","OCO","ALB","GAS","PER","SAI","STR","MAG","NOR"],
+            "name": "SPAIN",
+            "result": ["UDA","BOT","OCO","ALB","GAS","PER","SAI","STR","MAG","NOR"],
             "fastestLap": {
                 "driver": "BOT",
                 "position": "2"
             }
         },
+
         {
-            "name": "Monaco",
-            "result": ["HAM","NOR","PER","BOT","GRO","ALB","LEC","RAI","RIC","RUS"],
+            "name": "MONACO",
+            "result": ["UDA","NOR","PER","BOT","GRO","ALB","LEC","RAI","RIC","RUS"],
             "fastestLap": {
-                "driver": "VER",
-                "position": "20"
+                "driver": "",
+                "position": "1"
+            }
+        },
+
+        {
+            "name": "AZERBAIJAN",
+            "result": ["SUP","PER","BOT","OCO","NOR","KVY","VET","SAI","STR","UDA"],
+            "fastestLap": {
+                "driver": "NOR",
+                "position": "5"
+            }
+        },
+
+        {
+            "name": "CANADA",
+            "result": ["SUP","UDA","JAN","OCO","GAS","STR","PER","SAI","ALB","NOR"],
+            "fastestLap": {
+                "driver": "UDA",
+                "position": "2"
+            }
+        },
+
+        {
+            "name": "FRENCH",
+            "result": ["SUP","JAN","ALB","UDA","PER","STR","OCO","SAI","RIC","LEC"],
+            "fastestLap": {
+                "driver": "JAN",
+                "position": "2"
+            }
+        },
+
+        {
+            "name": "AUSTRIA",
+            "result": ["UDA","SUP","ALB","STR","RIC","OCO","PER","NOR","SAI","KVY"],
+            "fastestLap": {
+                "driver": "SUP",
+                "position": "2"
             }
         }
+
+
     ]
 }

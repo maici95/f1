@@ -9,6 +9,7 @@
         {"TID":"WIL","name":"Williams","points":"0"},
         {"TID":"ALF","name":"Alfa Romeo","points":"0"},
         {"TID":"MCL","name":"McLaren","points":"0"},
-        {"TID":"HAS","name":"Haas","points":"0"}
+        {"TID":"HAS","name":"Haas","points":"0"},
+        {"TID":"CUS","name":"Custom","points":"0"}
     ]
 }
